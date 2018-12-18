@@ -1,0 +1,52 @@
+{
+  "_from": "vue2-layer-mobile@^1.0.4",
+  "_id": "vue2-layer-mobile@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha1-H2zMWT8qLfCU7crXdpTLR6JTN50=",
+  "_location": "/vue2-layer-mobile",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "vue2-layer-mobile@^1.0.4",
+    "name": "vue2-layer-mobile",
+    "escapedName": "vue2-layer-mobile",
+    "rawSpec": "^1.0.4",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/vue2-layer-mobile/download/vue2-layer-mobile-1.0.4.tgz",
+  "_shasum": "1f6ccc593f2a2df094edcad77694cb47a253379d",
+  "_spec": "vue2-layer-mobile@^1.0.4",
+  "_where": "C:\\Users\\OK\\Desktop\\新建文件夹\\vueCode\\tob",
+  "author": {
+    "name": "qiheng"
+  },
+  "bugs": {
+    "url": "https://github.com/qiheng/vue2-layer-mobile/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "vue2.0移动端弹层",
+  "homepage": "https://github.com/qiheng/vue2-layer-mobile#readme",
+  "keywords": [
+    "vue2.0",
+    "layer",
+    "layer-mobile",
+    "vue-layer-mobile"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "vue2-layer-mobile",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiheng/vue2-layer-mobile.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.4"
+}
