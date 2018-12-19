@@ -156,6 +156,7 @@
   </div>
 </template>
 <script>
+import { showInfo } from '../../service/getData'
 export default {
   data () {
     return {
@@ -189,7 +190,16 @@ export default {
   mounted () {
     window.addEventListener('scroll', this.handleScroll, this.hashChange)
   },
+  created () {
+    this.send()
+  },
   methods: {
+    async send () {
+      await showInfo({id: 1}).then(res => {
+        console.log('hhhh')
+        console.log(res)
+      })
+    },
     Initialization () {
       document.body.scrollTop = 0
     },
