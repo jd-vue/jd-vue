@@ -329,8 +329,8 @@ export default {
 }
 </script>
 <style scoped  lang="scss">
-@import "../assets/common.scss";
-@import "../assets/css/index.css";
+@import "../../assets/common.scss";
+@import "../../assets/css/index.css";
 .m-layout{
     padding-bottom: 60px;
 }

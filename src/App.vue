@@ -12,7 +12,7 @@
   </div>
 </template>
 <script>
-import NavBottomView from './components/NavBottom.vue'
+import NavBottomView from './pages/home/NavBottom.vue'
 export default {
   name: 'App',
   components: {
