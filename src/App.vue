@@ -1,6 +1,9 @@
 <template>
   <div id="app">
+<<<<<<< HEAD
     <HomeNavView></HomeNavView>
+=======
+>>>>>>> df45f0125d339011a919f6cf249d7122af615a5d
     <transition name="router-fade" mode="out-in">
       <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>

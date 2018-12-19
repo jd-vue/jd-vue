@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Header></Header>
     <div class="m-layout">
       <!-- 轮播图-->
       <HomeBannerView></HomeBannerView>
@@ -302,6 +303,7 @@
 <script>
 import HomeBannerView from './HomeBanner.vue'
 import HomeNavView from '../../components/NavBottom.vue'
+import Header from '../../components/header.vue'
 import HomeMainView from './HomeMain.vue'
 export default {
   data () {
@@ -324,7 +326,8 @@ export default {
   components: {
     HomeBannerView,
     HomeNavView,
-    HomeMainView
+    HomeMainView,
+    Header
   }
 }
 </script>
@@ -332,7 +335,7 @@ export default {
 @import "../../assets/common.scss";
 @import "../../assets/css/index.css";
 .m-layout{
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 }
 .actimg {
   width: 750px;

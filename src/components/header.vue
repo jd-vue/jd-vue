@@ -24,7 +24,7 @@
           <i class="icon-more">...</i>
         </span>
         <!-- 菜单 -->
-        <layer v-model="menu" :type='1' :shade="false" @click="closeMenu()" styles="position:fixed;top:60px;right:15px;padding: 0;background-color:transparent" style="position: fixed; left: 0px; top: 0px; width: 100%; background-color: rgba(0, 0, 0, 0.1); height: 100%;">
+        <layer v-model="menu" :type='1' :shade="false" styles="position:fixed;top:60px;right:15px;padding: 0;background-color:transparent" style="position: fixed; left: 0px; top: 0px; width: 100%; background-color: rgba(0, 0, 0, 0.1); height: 100%;">
           <div class="layer_menu">
             <ul class='menulist'>
               <li>
@@ -118,7 +118,6 @@ export default {
       this.showLayer = true
     },
     close () {
-      console.log('kkk')
       this.showLayer = false
     }
   }
