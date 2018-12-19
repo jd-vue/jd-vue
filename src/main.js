@@ -2,12 +2,6 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-<<<<<<< HEAD
-import router from './router'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-
-Vue.use(VueAwesomeSwiper)
-=======
 import VueRouter from 'vue-router'
 import routes from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
@@ -30,7 +24,6 @@ const router = new VueRouter({
   mode: 'hash' // 环境
 })
 
->>>>>>> 6b8bbe95515fd8d85c6ebcebf91394ab803f1fd7
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
