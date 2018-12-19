@@ -19,6 +19,7 @@ export default {
 
 <style lang="scss">
 @import './assets/common.scss';
+@import './assets/iconfont/iconfont.css';
 .router-fade-enter-active,
 .router-fade-leave-active {
   transition: opacity .3s;

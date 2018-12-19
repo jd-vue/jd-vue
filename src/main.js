@@ -17,7 +17,6 @@ Vue.component('myHeader', myHeader)
 Vue.use(VueAwesomeSwiper)
 // 弹窗组件
 Vue.use(layer)
-
 // 路由
 Vue.use(VueRouter)
 const router = new VueRouter({
