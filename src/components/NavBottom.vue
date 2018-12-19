@@ -3,7 +3,7 @@
     <footer class="fixBottomBox">
       <ul class="box-nav">
         <router-link tag="li" to="/home" class="tabItem">
-          <li  class="tab-item-link" :class="{active:$route.path.indexOf('home')!= -1 }" >
+          <li  class="tab-item-link" >
             <i class="iconfont icon-shouye font" :class="{active:$route.path.indexOf('home')!= -1 }" ></i>
             <span :class="{active:$route.path.indexOf('home')!= -1 }" >首页</span>
           </li>
@@ -16,20 +16,20 @@
         </router-link>
         <router-link tag="li" to="/find" class="tabItem">
          <li   class="tab-item-link">
-            <i class="iconfont icon-faxian font"></i>
-            <span>发现</span>
+            <i class="iconfont icon-faxian font" :class="{active:$route.path.indexOf('find')!= -1 }"></i>
+            <span :class="{active:$route.path.indexOf('find')!= -1 }">发现</span>
           </li>
         </router-link>
         <router-link tag="li" to="/cart" class="tabItem">
           <li   class="tab-item-link">
-            <i class="iconfont icon-gouwuche font"></i>
-            <span>购物车</span>
+            <i class="iconfont icon-gouwuche font" :class="{active:$route.path.indexOf('cart')!= -1 }"></i>
+            <span :class="{active:$route.path.indexOf('cart')!= -1 }">购物车</span>
           </li>
         </router-link>
         <router-link tag="li" to="/mine" class="tabItem">
         <li   class="tab-item-link">
-            <i class="iconfont icon-wode font"></i>
-            <span>我的</span>
+            <i class="iconfont icon-wode font" :class="{active:$route.path.indexOf('mine')!= -1 }"></i>
+            <span :class="{active:$route.path.indexOf('mine')!= -1 }">我的</span>
           </li>
         </router-link>
       </ul>
@@ -37,7 +37,7 @@
   </div>
 </template>
 <style scoped  lang="scss">
-@import '../../assets/common.scss';
+@import '../assets/common.scss';
 .active{
   color: red;
 }
@@ -51,7 +51,8 @@
     flex-direction: row;
     background-color: #fff;
     .tab-item-link{
-        padding: 6px  0; 
+        padding-top: 6px;
+        padding-bottom: 6px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -61,6 +62,5 @@
         font-weight: 600;
         }
     }
-  
 }
 </style>

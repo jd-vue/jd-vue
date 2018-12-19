@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBottomView></NavBottomView>
+    <HomeNavView></HomeNavView>
     <transition name="router-fade" mode="out-in">
       <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>
@@ -12,11 +12,11 @@
   </div>
 </template>
 <script>
-import NavBottomView from './pages/home/NavBottom.vue'
+import HomeNavView from './components/NavBottom.vue'
 export default {
   name: 'App',
   components: {
-    NavBottomView
+    HomeNavView
   }
 }
 </script>

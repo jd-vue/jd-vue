@@ -301,7 +301,7 @@
 </template>
 <script>
 import HomeBannerView from './HomeBanner.vue'
-import HomeNavView from './NavBottom.vue'
+import HomeNavView from '../../components/NavBottom.vue'
 import HomeMainView from './HomeMain.vue'
 export default {
   data () {
