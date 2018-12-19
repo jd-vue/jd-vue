@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <NavBottomView v-show="shownav"></NavBottomView> -->
     <transition name="router-fade" mode="out-in">
       <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>
@@ -10,15 +11,19 @@
     </transition>
   </div>
 </template>
-
 <script>
+import NavBottomView from './components/NavBottom.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    NavBottomView
+  }
 }
 </script>
 
 <style lang="scss">
 @import './assets/common.scss';
+@import './assets/css/index.css';
 @import './assets/iconfont/iconfont.css';
 .router-fade-enter-active,
 .router-fade-leave-active {

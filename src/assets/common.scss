@@ -15,6 +15,11 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
         outline: none;
     }
 }
+ul {
+    li {
+        list-style: none;
+    }
+}
 [aspectratio] {
     position: relative;
 }
