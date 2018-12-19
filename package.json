@@ -20,9 +20,15 @@
     "postcss-viewport-units": "^0.1.6",
     "postcss-write-svg": "^3.0.1",
     "vue": "^2.5.2",
+<<<<<<< HEAD
     "vue-awesome-swiper": "^3.1.3",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
+=======
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "vue-awesome-swiper": "^3.1.3"
+>>>>>>> 6b8bbe95515fd8d85c6ebcebf91394ab803f1fd7
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
