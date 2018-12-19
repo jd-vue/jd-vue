@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <NavBottomView v-show="shownav"></NavBottomView> -->
+    <NavBottomView></NavBottomView>
     <transition name="router-fade" mode="out-in">
       <keep-alive>
         <router-view v-if="$route.meta.keepAlive"></router-view>

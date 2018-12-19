@@ -28,5 +28,10 @@ export default [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  { // //首页
+    path: '/home',
+    name: 'Home',
+    component: Home
   }
 ]

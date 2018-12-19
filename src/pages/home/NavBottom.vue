@@ -3,29 +3,34 @@
     <footer class="fixBottomBox">
       <ul class="box-nav">
         <router-link tag="li" to="/home" class="tabItem">
-          <a href="javascript:;" class="tab-item-link">
-            <img src="../../assets/images/a-home.png" alt class="tab-item-icon">
-          </a>
+          <li  class="tab-item-link" :class="{active:$route.path.indexOf('home')!= -1 }" >
+            <i class="iconfont icon-shouye font" :class="{active:$route.path.indexOf('home')!= -1 }" ></i>
+            <span :class="{active:$route.path.indexOf('home')!= -1 }" >首页</span>
+          </li>
         </router-link>
         <router-link tag="li" to="/catgory" class="tabItem">
-          <a href="javascript:;" class="tab-item-link">
-            <img src="../../assets/images/n-catergry.png" alt class="tab-item-icon">
-          </a>
+          <li  class="tab-item-link"  >
+            <i class="iconfont icon-leimupinleifenleileibie font" :class="{active:$route.path.indexOf('catgory')!= -1 }"></i>
+            <span :class="{active:$route.path.indexOf('catgory')!= -1 }">分类</span>
+          </li>
         </router-link>
         <router-link tag="li" to="/find" class="tabItem">
-          <a href="javascript:;" class="tab-item-link">
-            <img src="../../assets/images/n-find.png" alt class="tab-item-icon">
-          </a>
+         <li   class="tab-item-link">
+            <i class="iconfont icon-faxian font"></i>
+            <span>发现</span>
+          </li>
         </router-link>
         <router-link tag="li" to="/cart" class="tabItem">
-          <a href="javascript:;" class="tab-item-link">
-            <img src="../../assets/images/n-cart.png" alt class="tab-item-icon">
-          </a>
+          <li   class="tab-item-link">
+            <i class="iconfont icon-gouwuche font"></i>
+            <span>购物车</span>
+          </li>
         </router-link>
         <router-link tag="li" to="/mine" class="tabItem">
-          <a href="javascript:;" class="tab-item-link">
-            <img src="../../assets/images/n-me.png" alt class="tab-item-icon">
-          </a>
+        <li   class="tab-item-link">
+            <i class="iconfont icon-wode font"></i>
+            <span>我的</span>
+          </li>
         </router-link>
       </ul>
     </footer>
@@ -33,7 +38,9 @@
 </template>
 <style scoped  lang="scss">
 @import '../../assets/common.scss';
-
+.active{
+  color: red;
+}
 .fixBottomBox{
     position: fixed;
     bottom: 0;
@@ -44,13 +51,16 @@
     flex-direction: row;
     background-color: #fff;
     .tab-item-link{
-        display: inline-block;
+        padding: 6px  0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 150px;
-        img{
-            display: inline-block;
-            width: 150px;
-            height: 120px;
+          .font{
+        font-size: 62px;
+        font-weight: 600;
         }
     }
+  
 }
 </style>
