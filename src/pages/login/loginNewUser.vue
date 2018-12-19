@@ -1,6 +1,6 @@
 <template>
 <div class="box">
-  <div v-if="login">
+  <div>
     <div class="loginuser">
       <span class="area"><i class="headcountext">+863243432</i><img src=../../assets/image/down.png class="down"/></span>
       <input type="text" placeholder="请输入手机号" class="mobile" oninput = "value=value.replace(/[^\d]/g,'')"/>
