@@ -23,6 +23,33 @@
         <span>
           <i class="icon-more">...</i>
         </span>
+        <!-- 菜单 -->
+        <layer v-model="menu" :type='1' :shade="false" @click="closeMenu()" styles="position:fixed;top:60px;right:15px;padding: 0;background-color:transparent" style="position: fixed; left: 0px; top: 0px; width: 100%; background-color: rgba(0, 0, 0, 0.1); height: 100%;">
+          <div class="layer_menu">
+            <ul class='menulist'>
+              <li>
+                <i class="icon-shop"></i>
+                <span>消息</span>
+              </li>
+              <li>
+                <i class="icon-message"></i>
+                <span>首页</span>
+              </li>
+              <li>
+                <i class="icon-mine"></i>
+                <span>搜素</span>
+              </li>
+              <li>
+                <i class="icon-search"></i>
+                <span>店铺</span>
+              </li>
+              <li>
+                <i class="icon-search"></i>
+                <span>我的关注</span>
+              </li>
+            </ul>
+          </div>
+        </layer>
       </section>
       <!-- 分享按钮 -->
       <layer v-model="showLayer" :type='1' anim='up' @close="close()" styles="position:fixed;bottom:0;left:0;width: 750px; height: 5;padding: 0; border:none;">
@@ -63,33 +90,6 @@
           <span class="footer_layer" @click="close()">取消</span>
         </div>
       </layer>
-      <!-- 菜单 -->
-      <layer v-model="menu" :type='1' styles="position:fixed;top:60px;right:15px;padding: 0;background-color:transparent" @close="closeMenu()">
-        <div class="layer_menu">
-          <ul class='menulist'>
-            <li>
-              <i class="icon-shop"></i>
-              <span>消息</span>
-            </li>
-            <li>
-              <i class="icon-message"></i>
-              <span>首页</span>
-            </li>
-            <li>
-              <i class="icon-mine"></i>
-              <span>搜素</span>
-            </li>
-            <li>
-              <i class="icon-search"></i>
-              <span>店铺</span>
-            </li>
-            <li>
-              <i class="icon-search"></i>
-              <span>我的关注</span>
-            </li>
-          </ul>
-        </div>
-        </layer>
     </header>
   </div>
 </template>
@@ -105,6 +105,11 @@ export default {
   methods: {
     showMenu () {
       this.menu = !this.menu
+      if (this.menu) {
+        document.getElementsByTagName('body')[0].style.position = 'fixed'
+      } else {
+        document.getElementsByTagName('body')[0].style.position = ''
+      }
     },
     gotoAddress (path) {
       this.$router.push(path)
@@ -113,10 +118,8 @@ export default {
       this.showLayer = true
     },
     close () {
+      console.log('kkk')
       this.showLayer = false
-    },
-    closeMenu () {
-      this.menu = false
     }
   }
 }
